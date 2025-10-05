@@ -55,8 +55,10 @@ dependencies {
     // Room Database
     val room_version = "2.6.1"
     implementation("androidx.room:room-runtime:$room_version")
-    implementation("androidx.room:room-ktx:$room_version") // Untuk dukungan Coroutine
-    ksp("androidx.room:room-compiler:$room_version") // Annotation processor
+    implementation("androidx.room:room-ktx:$room_version")
+    ksp("androidx.room:room-compiler:$room_version")
 
     implementation("com.google.code.gson:gson:2.10.1")
+
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
 }

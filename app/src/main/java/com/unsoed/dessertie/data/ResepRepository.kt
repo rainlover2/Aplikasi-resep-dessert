@@ -7,7 +7,6 @@ import java.io.IOException
 
 class ResepRepository(private val resepDao: ResepDao, private val context: Context) {
 
-    // Fungsi untuk mengecek dan mengisi data awal jika database kosong
     suspend fun checkAndPrepopulateDatabase() {
         if (resepDao.getAllRecipes().isEmpty()) {
             try {
@@ -21,8 +20,7 @@ class ResepRepository(private val resepDao: ResepDao, private val context: Conte
         }
     }
 
-    // Di sini Anda bisa menambahkan fungsi lain untuk berinteraksi dengan DAO
     fun getAllRecipes() = resepDao.getAllRecipes()
     fun searchRecipes(query: String) = resepDao.searchRecipes(query)
-    // ...dan seterusnya
+    // .........
 }
