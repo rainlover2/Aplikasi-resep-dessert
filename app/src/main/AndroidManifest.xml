@@ -13,10 +13,9 @@
         android:label="Dessertie"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Dessertie">
-        <activity
-            android:name=".CategoryActivity"
-            android:exported="false" />
+        android:theme="@style/Theme.Dessertie"
+        tools:targetApi="31">
+
         <activity
             android:name=".SplashActivity"
             android:exported="true">
@@ -25,10 +24,22 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity> <!-- MainActivity menjadi halaman biasa, bukan halaman utama lagi -->
+        </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true" />
+            android:exported="false" />
+        <activity
+            android:name=".CategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.DaftarResepActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailResepActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FavoriteActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

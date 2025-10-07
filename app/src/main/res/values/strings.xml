@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Dessertie</string>
+    <string name="category_es_krim">ES KRIM</string>
+    <string name="category_minuman">MINUMAN</string>
+    <string name="category_cake_dan_pastry">CAKE DAN PASTRY</string>
+    <string name="category_cemilan">CEMILAN</string>
+    <string name="category_snack">SNACK</string>
+    <string name="category_dessert">DESSERT</string>
+    <string name="category_makanan">MAKANAN</string>"
+
+
 </resources>

@@ -7,7 +7,6 @@ import androidx.room.PrimaryKey
 data class Resep(
     @PrimaryKey(autoGenerate = true)
     val id: Int = 0,
-
     val namaResep: String,
     val bahan: String,
     val langkahMemasak: String,
